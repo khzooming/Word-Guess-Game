@@ -1,0 +1,12 @@
+
+#main {
+    width: 100%;
+}
+
+#imageBlock {
+    display: block;
+    background-color: red;
+    width: 600px;
+    height: 800px;
+    position: 50%;
+}

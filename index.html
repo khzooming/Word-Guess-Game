@@ -4,90 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Word Game HW</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script type="text/javascript" src="./assets/javascript/game.js"></script>
+
 </head>
 
 <body>
 
-    <h1>Hangman Game</h1>
+    <div class="jumbotron" id="main">
+        <h1 class="display-4">The OSCARS Word Game!</h1>
+        <p class="lead">Press any key to start the game.</p>
 
-    <script type="text/javascript" src="./assets/javascript/game.js">
+        <hr class="my-4">
+        <p>You have 10 tries to guess the letters of each word. Good luck!</p>
+        <a class="btn btn-primary btn-lg" id="start" href="#" role="button">Start the Game</a>
+        </hr>
+        <!-- Here's where the word to be guessed is displayed, first with dashes and then with letters as they are guessed. -->
+        <div><span id="word"></span></div>
 
-        // Oscar- nominated movies theme  :)
+        <!-- Here's where each guessed letters  - each key press - will be displayed -->
+        <h2><span id="letterInputs"></span></h2>
+        </h2>
 
-
-        // A - Press any key to get started
-        // - Display the phrase on page - "press any key to get started"
-        // - add functionality onkeyclick any -->
-
-        var oscarsGame = [
-            { m: "My Cousin Vinny" },
-            { m: "A Beautiful Mind" },
-            { m: "A Few Good Men" },
-            { m: "A Star is Born" }
-        ]
-
-        console.log(guessWord);
-
-        oscarsGame = function () {
-            for (var i = 0; i < oscarsGame.length; i++) {
-                var guessWord = movieTitle[i];
-                console.log(guessWord)
-            }
-        }
-
-        // Press a key to start the game - this needs to be changed to press any key
-
-        if (input === 'n') {
-            oscarsGame();
-            console.log("game was started")
-        }
+    </div>
 
 
-    </script>
-
-// A - Use key events to listen for letters the user will type
-
-// A - Build early array
-
-// A - Display number of letters for word
-
-// A - Current Word to Guess
-//     - Show Underscore lines representing the characters to guess
-//     - as the letters are correct, they fill up in the correct position of the word / phrase
-
-// B - Letters Already Guessed
-//         - Shows all letters Guessed
-//         - For each letter listed, if the user hits the same key again, nothing happens
-
-// B - when they get the word correct:
-//         the image updates to that correctly guessed word
-//         add word / phrase near image in big nice font
-
-// B - Wins - # of times the user guessed the word correctly
-
-// C - Number of guesses remaining #
-
-// C - press any key to start the game.  Currently have it set on starting with one specific key
-        // - Display the phrase on page - "press any key to get started"
-
-//  C - Layout 
-
-// C - image related to word
-//         - Image file needs to be stored in array... or maybe name it associated to the array position, 
-
-
-// D - Bonus - have a "show hint" button to get info about the movies
-// - this would add more array and research work but is cool.
-
-// D - (Consider adding a reset button)
-
-// D - (Consider adding a "Enter your name" section
-//         - Could add "Kathy's Wins" instead of just wins)
+    <div id="imageBlock">
+        <img id="image" src="./assets/images/#" height="600px" width="400px">
 
 
 
+    </div>
 
 </body>
 
 </html>
-
