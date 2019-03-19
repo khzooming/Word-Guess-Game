@@ -9,8 +9,6 @@
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <script type="text/javascript" src="./assets/javascript/game.js"></script>
-
 </head>
 
 <body>
@@ -24,7 +22,13 @@
         <a class="btn btn-primary btn-lg" id="start" href="#" role="button">Start the Game</a>
         </hr>
         <!-- Here's where the word from the array is displayed, first with dashes and then with letters as they are guessed. -->
-        <div><span id="word"></span></div>
+        <div>Your Word to Guess:</div>
+        <h3><span id="wordPlace"></span></h3>
+        <div><span id="test2"></span>
+            <p> and here's the end</p>
+        </div>
+        
+
 
         <!-- Here's where each guessed letters  - each key press - will be displayed -->
         <h2><span id="letterInputs"></span></h2>
@@ -39,6 +43,8 @@
 
 
     </div>
+
+    <script type="text/javascript" src="./assets/javascript/game.js"></script>
 
 </body>
 
